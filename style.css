@@ -1,0 +1,60 @@
+@keyframes monAnimation {
+	0% {
+		
+        transform: translateX(0px) translateY(0px);
+    }
+    25% {
+        transform: translateX(480px) translateY(0px);
+    }
+    50% {
+      	transform: translateX(480px) translateY(180px);
+    }
+	52.50% {
+      	transform: translateX(250px) translateY(180px) rotate(45deg);
+      	border-color: red;
+    }
+	62.5% {
+      	transform: translateX(250px) translateY(180px) rotate(45deg);
+      	border-color: red;
+    }
+    75% {
+      	transform:  translateX(0px) translateY(180px) rotate(90deg);
+      	border-color: blue;
+      	border-radius: 0%;
+	   	width: 75px;
+		height: 75px;
+		background: #f3eded;
+	}
+    100% {
+
+    	transform:  translateX(420px) translateY(422px) rotate(90deg);
+	   	border-radius: 50%;
+	   	width: 150px;
+		height: 150px;
+		background: radial-gradient(circle at center, #fbda61, #f76b1c);    	
+    }
+}
+
+
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+#stage {
+	background: transparent url(css_animation_exercise_stage.png) 0 0 no-repeat;
+	width: 600px;
+	height: 600px;
+	margin: auto;
+	background-position: center;
+}
+#hero {
+	width: 75px;
+	height: 75px;
+	border: 1px dashed red;
+	position: absolute;
+	left: 338px;
+	top: 39px;
+    animation: monAnimation 20s; /* J'utilise "monAnimation" définie plus tôt */
+    animation-iteration-count: infinite; /* répétition infinie*/*/
+ }
